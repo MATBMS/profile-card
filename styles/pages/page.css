@@ -16,9 +16,28 @@ body {
     url("../../images/bg-pattern-top.svg"),
     url("../../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
+  /* Mobile: corner patterns sit close to the card. */
   background-position:
     right 42vw bottom 50vh,
     left 38vw top 43vh;
 
   font-variation-settings: "YOPQ" 300;
+}
+
+/* Tablet: re-anchor the bottom pattern further from the corner. */
+@media (min-width: 768px) {
+  body {
+    background-position:
+      right 41vw bottom 50vh,
+      left 50vw top 50vh;
+  }
+}
+
+/* Desktop: top pattern shifts further left, bottom pattern unchanged. */
+@media (min-width: 1024px) {
+  body {
+    background-position:
+      right 51vw bottom 38vh,
+      left 50vw top 50vh;
+  }
 }
