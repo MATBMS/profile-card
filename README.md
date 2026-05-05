@@ -35,8 +35,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Extra feature
 
-As a User,<br>
-I need to be able to [...],<br>
-So that I can [...].
+No Extra Feature.
 
 ### What I learned
+
+Nothing new.

@@ -68,3 +68,6 @@ design/
 CLAUDE.md
 .claude/
 .mcp.json
+
+# Local-only code review notes (not for the public repo)
+docs/

@@ -21,31 +21,3 @@ body {
   color: var(--color-navy-950);
 }
 
-.text-preset-1 {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-preset-1);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-preset-1);
-}
-
-.text-preset-1-regular {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-preset-1);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-preset-1);
-}
-
-.text-preset-2 {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-preset-2);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-preset-2);
-}
-
-.text-preset-3 {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-preset-3);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-preset-3);
-  letter-spacing: var(--letter-spacing-preset-3);
-}

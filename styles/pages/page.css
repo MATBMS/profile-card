@@ -5,11 +5,10 @@
    ────────────────────────────────────────── */
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-200);
 
   background-color: var(--color-blue-600);
   background-image:
@@ -22,6 +21,13 @@ body {
     left 38vw top 43vh;
 
   font-variation-settings: "YOPQ" 300;
+}
+
+/* <main> is the flex item between body and .profile-card. Flex items
+   default to min-width: auto, which won't shrink below the card's
+   min-content (the stats row) — overriding to 0 lets the card go fluid. */
+main {
+  min-width: 0;
 }
 
 /* Tablet: re-anchor the bottom pattern further from the corner. */
