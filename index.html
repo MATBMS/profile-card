@@ -10,17 +10,41 @@
   <title>Profile card</title>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <main>
+    <article class="profile-card">
+      <div class="profile-card__banner" aria-hidden="true"></div>
 
-  80K
-  Followers
+      <img
+        class="profile-card__avatar"
+        src="./images/image-victor.jpg"
+        alt="Victor Crest"
+        width="96"
+        height="96"
+      >
 
-  803K
-  Likes
+      <header class="profile-card__identity">
+        <h1 class="profile-card__heading">
+          <span class="profile-card__name">Victor Crest</span>
+          <span class="profile-card__age">26</span>
+        </h1>
+        <p class="profile-card__location">London</p>
+      </header>
 
-  1.4K
-  Photos
+      <ul class="profile-card__stats" role="list">
+        <li class="stat">
+          <p class="stat__value">80K</p>
+          <p class="stat__label">Followers</p>
+        </li>
+        <li class="stat">
+          <p class="stat__value">803K</p>
+          <p class="stat__label">Likes</p>
+        </li>
+        <li class="stat">
+          <p class="stat__value">1.4K</p>
+          <p class="stat__label">Photos</p>
+        </li>
+      </ul>
+    </article>
+  </main>
 </body>
 </html>

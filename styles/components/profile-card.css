@@ -1,0 +1,104 @@
+/* ──────────────────────────────────────────
+   Profile Card component
+   ────────────────────────────────────────── */
+
+.profile-card {
+  /* Fixed dimensions from Figma. */
+  width: 326px;
+  height: 374px;
+  flex-shrink: 0;
+
+  background-color: var(--color-white);
+  border-radius: 15px;
+  /* overflow:hidden so the bubble pattern gets clipped by the rounded corners */
+  overflow: hidden;
+  box-shadow: 0 50px 100px 0 rgba(8, 70, 94, 0.25);
+}
+
+.profile-card__banner {
+  height: 144px;
+  background-color: var(--color-blue-400);
+  background-image: url("../../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-card__avatar {
+  /* content-box so the 5px border sits OUTSIDE the 96px image, matching the design */
+  box-sizing: content-box;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 5px solid var(--color-white);
+  object-fit: cover;
+
+  /* Negative top margin pulls the avatar up over the banner so its centre
+     lands on the banner/body boundary. 53 = 48 (image radius) + 5 (border). */
+  margin: -53px auto 0;
+  display: block;
+}
+
+.profile-card__identity {
+  margin-top: var(--spacing-200);
+  text-align: center;
+}
+
+.profile-card__heading {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--spacing-100);
+
+  font-size: var(--font-size-preset-1);
+  line-height: var(--line-height-preset-1);
+  /* heading is bold by default — but we set per-span weights below */
+  font-weight: var(--font-weight-regular);
+}
+
+.profile-card__name {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-navy-950);
+}
+
+.profile-card__age {
+  color: var(--color-gray-500);
+}
+
+.profile-card__location {
+  margin-top: var(--spacing-100);
+  color: var(--color-gray-500);
+}
+
+.profile-card__stats {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-700);
+
+  margin-top: var(--spacing-300);
+  padding: var(--spacing-300) 0;
+  /* Divider line between identity and stats */
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  text-align: center;
+}
+
+.stat__value {
+  font-size: var(--font-size-preset-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-preset-1);
+  color: var(--color-navy-950);
+}
+
+.stat__label {
+  font-size: var(--font-size-preset-3);
+  line-height: var(--line-height-preset-3);
+  letter-spacing: var(--letter-spacing-preset-3);
+  color: var(--color-gray-500);
+}

@@ -1,0 +1,24 @@
+/* ──────────────────────────────────────────
+   Page layout & background
+   Centers the card in the viewport and paints
+   the teal background with the two corner SVGs.
+   ────────────────────────────────────────── */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-200);
+
+  background-color: var(--color-blue-600);
+  background-image:
+    url("../../images/bg-pattern-top.svg"),
+    url("../../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right 42vw bottom 50vh,
+    left 38vw top 43vh;
+
+  font-variation-settings: "YOPQ" 300;
+}
