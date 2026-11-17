@@ -1,0 +1,52 @@
+/* ========== RESET ========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== FONTS ========== */
+
+/* Variable font: one file covers every weight (400 and 700 are used) */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("./fonts/KumbhSans-VariableFont_YOPQ,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== CUSTOM PROPERTIES ========== */
+
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-slate-100: #e4f4fd;
+  --color-slate-500: #6b94a8;
+  --color-slate-700: #4e6e7e;
+  --color-slate-900: #133041;
+  --color-gray-100: #e8e9ec;
+  --color-gray-500: #6b7082;
+  --color-blue-400: #41cbd3;
+  --color-blue-600: #19a1ae;
+  --color-navy-950: #2e3349;
+
+  /* Font family */
+  --font-family: "Kumbh Sans", sans-serif;
+
+  /* Font sizes */
+  --font-size-preset-1: 1.125rem; /* 18px */
+  --font-size-preset-2: 0.875rem; /* 14px */
+  --font-size-preset-3: 0.625rem; /* 10px */
+
+  /* Spacing */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-800: 4rem; /* 64px */
+  --spacing-1600: 8rem; /* 128px */
+}
