@@ -24,6 +24,10 @@ Users should be able to:
 
 ### Extra feature
 
+**As a** visitor of the profile card page,<br>
+**I want to** see the stats count up from 0 to their final value,<br>
+**so that** the card feels more lively when it appears.
+
 ### Screenshot
 
 ![Design preview for the Profile card component coding challenge](./images/preview.jpg)
