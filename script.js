@@ -66,9 +66,10 @@ function animate(startTime) {
         stat.element.textContent = stat.finalText;
       } else {
         // Still counting: final value * eased progress, for example 80 * 0.875 = 70.
-        // toFixed keeps the right number of decimals and returns a text ("70", "0.7").
+        // toFixed rounds to the right number of decimals and returns a text ("70.0", "0.7").
+        // Number() turns it back into a number, which drops a useless ".0" ("0.0" -> 0).
         // Then we add the "K" back.
-        stat.element.textContent = (stat.target * easeOut(t)).toFixed(stat.decimals) + "K";
+        stat.element.textContent = Number((stat.target * easeOut(t)).toFixed(stat.decimals)) + "K";
       }
     });
 
@@ -84,10 +85,10 @@ function animate(startTime) {
 // Only animate if the visitor did NOT ask for reduced motion.
 // If they did, we do nothing, so the HTML keeps showing the final values.
 if (!reducedMotion) {
-  // Show "0K" (or "0.0K" for the number with a decimal) before the first frame,
-  // so we do not see the final value flash for a moment.
+  // Show "0K" before the first frame, so we do not see the final value flash
+  // for a moment.
   stats.forEach((stat) => {
-    stat.element.textContent = (0).toFixed(stat.decimals) + "K";
+    stat.element.textContent = "0K";
   });
 
   // requestAnimationFrame calls our function just before the browser draws the next
